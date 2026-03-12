@@ -1,0 +1,97 @@
+/* Global Variables & Reset */
+:root {
+    --color-bg: #F9F9F9; /* Very light cool background */
+    --color-bg-light: #FFFFFF;
+    --color-primary: #8AB89A; /* Soft Sage Green */
+    --color-primary-dark: #6C9A7D;
+    --color-text: #2C3E50; /* Deep Charcoal for readability */
+    --color-text-muted: #5A6D80;
+    --color-accent: #D98A6C; /* Warm Terracotta */
+    --color-pale-sand: #F5F1E7;
+    
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+    --transition: all 0.3s ease;
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-text);
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Typography Utility */
+.text-center { text-align: center; }
+.text-primary { color: var(--color-primary); }
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    border-radius: 4px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: var(--transition);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-text);
+    border: 2px solid var(--color-text-muted);
+}
+
+.btn-outline:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
